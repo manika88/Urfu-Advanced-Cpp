@@ -14,9 +14,6 @@ jobs:
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
       options: --name main-container
-      credentials:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
