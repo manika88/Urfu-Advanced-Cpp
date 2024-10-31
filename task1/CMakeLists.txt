@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.25)
 
 project(matrix)
 
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror")
+
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 if (Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
